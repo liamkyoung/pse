@@ -1,11 +1,8 @@
+import React from 'react'
 import Head from 'next/head'
 import Header from '../components/Header.js'
-import Body from '../components/Body.js'
-import Reasons from '../components/Reasons.js'
-import Popup from '../components/Popup.js'
-import Footer from '../components/Footer.js'
 
-export default function Home () {
+function recruitment () {
   return (
     <div className='min-h-screen bg-pse_purple-dark'>
       <Head>
@@ -16,20 +13,12 @@ export default function Home () {
         <link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin='true' />
         <link href='https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap' rel='stylesheet' />
       </Head>
-
       <div>
         <Header />
       </div>
-      <div>
-        <Body />
-      </div>
-      <div className='flex justify-center'>
-        <Reasons />
-      </div>
-      <div>
-        <Popup />
-      </div>
-      <Footer />
+      Recruitment
     </div>
   )
 }
+
+export default recruitment

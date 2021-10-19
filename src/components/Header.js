@@ -4,7 +4,7 @@ import PseLogo from '../../public/pse_header.png'
 
 function Header () {
   return (
-    <div className='flex items-center bg-pse_purple-light'>
+    <div className='flex items-center bg-pse_purple-light w-screen h-2/6'>
       {/* Photo */}
       <div>
         <Image
@@ -12,19 +12,19 @@ function Header () {
           width={300}
           height={70}
           objectFit='contain'
-          className='cursor-pointer'
+          className='cursor-pointer sm:hidden'
         />
       </div>
       {/* Navigation */}
-      <div className='flex text-white items-center ml-5 mr-5 font-4xl font-bold space-x-5 cursor-pointer float-left'>
-        <h4 className='hover:text-pse_yellow'>Home</h4>
-        <h4 className='hover:text-pse_yellow'>Members</h4>
-        <h4 className='hover:text-pse_yellow'>Recruitment</h4>
-        <h4 className='hover:text-pse_yellow'>About</h4>
-        <h4 className='hover:text-pse_yellow object-contain'>News and Events</h4>
+      <div className='flex flex-1 text-white items-center ml-5 mr-5 font-4xl font-bold space-x-7 cursor-pointer float-left'>
+        <a href='/' className='hover:text-pse_yellow'>Home</a>
+        <a href='/members' className='hover:text-pse_yellow'>Members</a>
+        <a href='/recruitment' className='hover:text-pse_yellow'>Recruitment</a>
+        <a href='/about' className='hover:text-pse_yellow'>About</a>
+        <a href='/events' className='hover:text-pse_yellow'>Events</a>
       </div>
-      <div className='hidden sm:flex text-white font-extrabold flex-nowrap float-right'>
-        <h3>YOUR BUSINESS ADVANTAGE FOR LIFE</h3>
+      <div className='flex flex-2 md:flex hidden text-white font-extrabold px-5'>
+        <a href='https://pse.org/'>YOUR BUSINESS ADVANTAGE FOR LIFE</a>
       </div>
     </div>
   )
