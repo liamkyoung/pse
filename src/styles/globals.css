@@ -1,3 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .scroll-snap-none {
+    scroll-snap-type: none;
+  }
+  .scroll-snap-x {
+    scroll-snap-type: x;
+  }
+  .scroll-snap-y {
+    scroll-snap-type: y mandatory;
+  }
+  .scroll-snap-start {
+    scroll-snap-align: start;
+  }
+  .scrollable-section {
+    @apply flex h-screen scroll-snap-start;
+  }
+  .scrollable-parent {
+    @apply overflow-y-scroll scroll-snap-y;
+  }
+  .thick-border-black {
+    @apply border-4 border-dashed border-black;
+  }
+  .thick-border-red {
+    @apply border-4 border-dashed border-red-500;
+  }
+  .thick-border-green {
+    @apply border-4 border-dashed border-green-500;
+  }
+  .button {
+    @apply cursor-pointer p-4 m-6 text-sm font-semibold md:text-base bg-gradient-to-b from-pse_yellow-very_light to-pse_yellow-light rounded-lg border-pse_yellow focus:outline-none;
+  }
+}

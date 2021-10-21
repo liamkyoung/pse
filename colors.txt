@@ -1,0 +1,22 @@
+#856C8B
+#D4EBD0
+#A4C5C6
+#FFEB99
+
+# gray
+99A1A6
+D3FAD6
+
+
+# red
+F9564F
+
+# blue
+3B8EA5 
+
+# green 
+35524A 
+004643
+
+# purple
+dark : 32213A

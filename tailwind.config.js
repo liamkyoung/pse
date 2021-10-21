@@ -7,11 +7,20 @@ module.exports = {
         pse_purple: {
           DEFAULT: '#52237F',
           light: '#A895BB',
-          dark: '#705E82'
+          medium: '#8E76A7',
+          dark: '#32213A'
         },
         pse_yellow: {
           DEFAULT: '#FFB600',
+          very_light: '#ffeb99',
+          light: '#DFA21E',
           dark: '#BF8E3B'
+        },
+        pse_gray: {
+          DEFAULT: '#2D2D2A',
+          light: '#99A1A6',
+          dark: '#2D2D2A',
+          black: '#090809'
         }
       }
     }

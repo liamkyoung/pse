@@ -1,29 +1,38 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import PseLogo from '../../public/pse_header.png'
 
 function Header () {
   return (
-    <div className='flex items-center bg-pse_purple-light w-screen h-2/6'>
+    <div className='sticky flex items-center bg-pse_purple-light border-2 border-pse_purple-medium'>
       {/* Photo */}
-      <div>
-        <Image
-          src={PseLogo}
-          width={300}
-          height={70}
-          objectFit='contain'
-          className='cursor-pointer sm:hidden'
-        />
-      </div>
+      <Image
+        src={PseLogo}
+        width={300}
+        height={70}
+        objectFit='contain'
+        className='cursor-pointer sm:hidden'
+      />
       {/* Navigation */}
-      <div className='flex flex-1 text-white items-center ml-5 mr-5 font-4xl font-bold space-x-7 cursor-pointer float-left'>
-        <a href='/' className='hover:text-pse_yellow'>Home</a>
-        <a href='/members' className='hover:text-pse_yellow'>Members</a>
-        <a href='/recruitment' className='hover:text-pse_yellow'>Recruitment</a>
-        <a href='/about' className='hover:text-pse_yellow'>About</a>
-        <a href='/events' className='hover:text-pse_yellow'>Events</a>
+      <div className='flex flex-1 text-white items-center ml-5 mr-3 font-4xl font-bold space-x-7'>
+        <Link href='/'>
+          <h1 className='hover:text-pse_yellow cursor-pointer'>Home</h1>
+        </Link>
+        <Link href='/members'>
+          <h1 className='hover:text-pse_yellow cursor-pointer'>Members</h1>
+        </Link>
+        <Link href='/recruitment'>
+          <h1 className='hover:text-pse_yellow cursor-pointer'> Recruitment</h1>
+        </Link>
+        <Link href='/about'>
+          <h1 className='hover:text-pse_yellow cursor-pointer'>About</h1>
+        </Link>
+        <Link href='/events'>
+          <h1 className='hover:text-pse_yellow cursor-pointer'>Events</h1>
+        </Link>
       </div>
-      <div className='flex flex-2 md:flex hidden text-white font-extrabold px-5'>
+      <div className='hidden flex-2 lg:flex text-white font-extrabold px-8'>
         <a href='https://pse.org/'>YOUR BUSINESS ADVANTAGE FOR LIFE</a>
       </div>
     </div>
