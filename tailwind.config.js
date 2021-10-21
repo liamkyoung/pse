@@ -21,6 +21,9 @@ module.exports = {
           light: '#99A1A6',
           dark: '#2D2D2A',
           black: '#090809'
+        },
+        pse_white: {
+          DEFAULT: '#EAF2E3'
         }
       }
     }
