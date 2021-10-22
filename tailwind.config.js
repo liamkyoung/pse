@@ -6,7 +6,7 @@ module.exports = {
       colors: {
         pse_purple: {
           DEFAULT: '#52237F',
-          light: '#A895BB',
+          light: '#b399d4',
           medium: '#8E76A7',
           dark: '#32213A'
         },
@@ -23,9 +23,12 @@ module.exports = {
           black: '#090809'
         },
         pse_white: {
-          DEFAULT: '#EAF2E3'
+          DEFAULT: '#faebff'
         }
       }
+    },
+    fontFamily: {
+      display: ['Monsterrat', 'Poppins'] 
     }
   },
   variants: {
