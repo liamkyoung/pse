@@ -18,7 +18,7 @@ export default function Home () {
       </Head>
 
       <Header />
-      <div className='scrollable-parent max-w-screen-2xl mx-auto h-screen'>
+      <div className='scrollable-parent max-w-screen-2xl mx-auto h-screen overflow-hidden'>
         <BodyTitle />
         <Section />
         <Reasons />

@@ -5,17 +5,19 @@ import PseLogo from '../../public/pse_header.png'
 
 function Header () {
   return (
-    <div className='sticky flex items-center bg-pse_purple-light border-2 border-pse_purple-medium'>
+    <div className='flex items-center bg-pse_purple-light border-2 border-pse_purple-medium'>
       {/* Photo */}
-      <Image
-        src={PseLogo}
-        width={300}
-        height={70}
-        objectFit='contain'
-        className='cursor-pointer sm:hidden'
-      />
+      <Link href='/'>
+        <Image
+          src={PseLogo}
+          width={300}
+          height={70}
+          objectFit='contain'
+          className='cursor-pointer'
+        />
+      </Link>
       {/* Navigation */}
-      <div className='flex flex-1 text-white items-center ml-5 mr-3 font-4xl font-bold space-x-7'>
+      <div className='flex flex-1 text-white items-center text-center ml-5 mr-3 mb-5 mt-5  font-4xl font-bold space-x-7'>
         <Link href='/'>
           <h1 className='hover:text-pse_yellow cursor-pointer'>Home</h1>
         </Link>

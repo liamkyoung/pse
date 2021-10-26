@@ -9,15 +9,15 @@ function Reasons () {
       <div className='flex justify-between h-12 w-1/2 text-2xl thick-border-black'>
         <div className='text-center text-black hover:text-pse_yellow-dark w-12'>
           <StockIcon />
-          Skills
+          <h1>Skills</h1>
         </div>
         <div className='text-center text-black hover:text-pse_yellow-dark w-12'>
           <UserGroup />
-          Social
+          <h1>Social</h1>
         </div>
         <div className='text-center text-black hover:text-pse_yellow-dark w-12'>
           <Briefcase />
-          Success
+          <h1>Success</h1>
         </div>
       </div>
     </div>
