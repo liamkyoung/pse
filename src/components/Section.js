@@ -1,10 +1,12 @@
 import React from 'react'
-import ScrollText from '../components/ScrollText.js'
+import ScrollTextTop from '../components/ScrollTextTop.js'
+import ScrollTextBottom from '../components/ScrollTextBottom.js'
 
-function Section () {
+function Section () {  
   return (
     <div className='scrollable-section items-center justify-center text-xl text-bold'>
-      <ScrollText />
+      <ScrollTextTop />
+      <ScrollTextBottom />
     </div>
   )
 }
