@@ -28,7 +28,7 @@ module.exports = {
       }
     },
     fontFamily: {
-      display: ['Monsterrat', 'Poppins'] 
+      display: ['Monsterrat', 'Poppins']
     }
   },
   variants: {
